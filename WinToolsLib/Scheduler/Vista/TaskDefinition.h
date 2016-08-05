@@ -9,6 +9,7 @@
 #include "Action.h"
 #include "Principal.h"
 #include "Trigger.h"
+#include "EventTrigger.h"
 #include "TaskSettings.h"
 
 namespace WinToolsLib { namespace Scheduler { namespace Vista
@@ -34,6 +35,7 @@ namespace WinToolsLib { namespace Scheduler { namespace Vista
 
 		Trigger GetTrigger() const;
 		Trigger CreateTrigger(TriggerType type);
+		EventTrigger CreateEventTrigger();
 
 		TaskSettings GetSettings() const;
 		Void SetSettings(ITaskSettings* settings);

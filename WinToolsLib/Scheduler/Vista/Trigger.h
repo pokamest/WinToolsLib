@@ -13,6 +13,7 @@ namespace WinToolsLib { namespace Scheduler { namespace Vista
 {
 	enum class TriggerType
 	{
+		Event = TASK_TRIGGER_EVENT,
 		Time = TASK_TRIGGER_TIME,
 		Daily = TASK_TRIGGER_DAILY,
 		Weekly = TASK_TRIGGER_WEEKLY,

@@ -155,6 +155,7 @@
     <ClInclude Include="Scheduler\Vista\TaskService.h" />
     <ClInclude Include="Scheduler\Vista\TaskSettings.h" />
     <ClInclude Include="Scheduler\Vista\Trigger.h" />
+    <ClInclude Include="Scheduler\Vista\EventTrigger.h" />
     <ClInclude Include="Scheduler\Vista\WeeklyTrigger.h" />
     <ClInclude Include="Scheduler\Xp\Task.h" />
     <ClInclude Include="Scheduler\Xp\TaskScheduler.h" />
@@ -415,6 +416,7 @@
     <ClCompile Include="Scheduler\Vista\TaskService.cpp" />
     <ClCompile Include="Scheduler\Vista\TaskSettings.cpp" />
     <ClCompile Include="Scheduler\Vista\Trigger.cpp" />
+    <ClCompile Include="Scheduler\Vista\EventTrigger.cpp" />
     <ClCompile Include="Scheduler\Vista\WeeklyTrigger.cpp" />
     <ClCompile Include="Scheduler\Xp\Task.cpp" />
     <ClCompile Include="Scheduler\Xp\TaskScheduler.cpp" />

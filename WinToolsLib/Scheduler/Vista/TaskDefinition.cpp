@@ -161,10 +161,40 @@ namespace WinToolsLib { namespace Scheduler { namespace Vista
 		return Trigger(std::move(trigger));
 	}
 
+	EventTrigger TaskDefinition::CreateEventTrigger()
+	{
+		Com::Ptr<ITriggerCollection> collection;
+
+		auto hr = m_task->get_Triggers(&collection);
+		if (FAILED(hr))
+		{
+			THROW_WIN32_EXCEPTION(hr);
+		}
+
+		Com::Ptr<ITrigger> trigger;
+
+		hr = collection->Create(static_cast<TASK_TRIGGER_TYPE2>(TriggerType::Event), &trigger);
+		if (FAILED(hr))
+		{
+			THROW_WIN32_EXCEPTION(hr);
+		}
+
+		Com::Ptr<IEventTrigger> eventTrigger;
+
+		hr = trigger->QueryInterface(IID_IEventTrigger,
+									 (void**)&eventTrigger);
+		if (FAILED(hr))
+		{
+			THROW_WIN32_EXCEPTION(hr);
+		}
+
+		return EventTrigger(std::move(eventTrigger));
+	}
+
 	TaskSettings TaskDefinition::GetSettings() const
 	{
 		Com::Ptr<ITaskSettings> settings;
-		
+
 		auto hr = m_task->get_Settings(&settings);
 		if (FAILED(hr))
 		{
