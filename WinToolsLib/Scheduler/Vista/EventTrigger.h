@@ -25,10 +25,10 @@ namespace WinToolsLib { namespace Scheduler { namespace Vista
 
 		EventTrigger& operator=(EventTrigger&& other);
 
-                TriggerType GetType() const;
+		TriggerType GetType() const;
 
-                StringW GetSubscription() const;
-                Void SetSubscription(const WChar* queryString);
+		StringW GetSubscription() const;
+		Void SetSubscription(const WChar* queryString);
 
 	protected:
 		Void MoveFrom(EventTrigger& other);

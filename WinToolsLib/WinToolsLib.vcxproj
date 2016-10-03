@@ -152,6 +152,7 @@
     <ClInclude Include="Scheduler\Vista\RegisteredTask.h" />
     <ClInclude Include="Scheduler\Vista\TaskDefinition.h" />
     <ClInclude Include="Scheduler\Vista\TaskFolder.h" />
+    <ClInclude Include="Scheduler\Vista\TaskRun.h" />
     <ClInclude Include="Scheduler\Vista\TaskService.h" />
     <ClInclude Include="Scheduler\Vista\TaskSettings.h" />
     <ClInclude Include="Scheduler\Vista\Trigger.h" />
@@ -413,6 +414,7 @@
     <ClCompile Include="Scheduler\Vista\RegisteredTask.cpp" />
     <ClCompile Include="Scheduler\Vista\TaskDefinition.cpp" />
     <ClCompile Include="Scheduler\Vista\TaskFolder.cpp" />
+    <ClCompile Include="Scheduler\Vista\TaskRun.cpp" />
     <ClCompile Include="Scheduler\Vista\TaskService.cpp" />
     <ClCompile Include="Scheduler\Vista\TaskSettings.cpp" />
     <ClCompile Include="Scheduler\Vista\Trigger.cpp" />
