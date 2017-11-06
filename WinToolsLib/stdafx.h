@@ -30,7 +30,7 @@
 #include <comutil.h>
 #include <IntShCut.h>
 #include <IPHlpApi.h>
-#include <mscat.h>
+//#include <mscat.h>
 #include <MSTask.h>
 #include <Objbase.h>
 #include <OleAuto.h>
